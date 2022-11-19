@@ -1,0 +1,10 @@
+<main>
+  <div *ngFor="let person of persons" class="card">
+    <div class="image">
+      <img [src]="person.image_url" alt="imagen">
+    </div>
+    <span class="name">{{person.name}}</span>
+    <span class="description">{{person.description}}</span>
+    <span class="votes">Votos: {{person.votes_quantity}}</span>
+  </div>
+</main>
